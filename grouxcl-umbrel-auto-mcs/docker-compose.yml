@@ -17,7 +17,7 @@ services:
       "-t", "fontSize=20",
       "-t", "theme={\"background\": \"#1A1A1A\"}",
       "-p", "8080",
-      "-c", "admin:auto-mcs",
+      "-H", "X-TTYD-Auth",
       "tmux", "-u", "-2", "new", "-A",
       "-s", "auto-mcs",
       "-c", ".",
