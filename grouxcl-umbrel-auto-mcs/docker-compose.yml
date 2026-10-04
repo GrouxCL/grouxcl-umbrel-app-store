@@ -19,7 +19,7 @@ services:
 
     ports:
       - "7001:7001"
-      - "25565:25565"
+      - "25601:25565"
 
     extra_hosts:
       - "host.docker.internal:host-gateway"
