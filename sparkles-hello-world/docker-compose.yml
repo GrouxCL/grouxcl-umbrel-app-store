@@ -4,11 +4,26 @@ services:
 
   app_proxy:
     environment:
-      # The format here is: <app-id>_<docker-service-name>_1
-      APP_HOST: sparkles-hello-world_server_1
-      APP_PORT: 3000
-    
-  server:
-    image: getumbrel/community-app-store-hello-world:latest
-    user: "1000:1000"
-    init: true
+      APP_HOST: minecraft-auto-mcs_auto-mcs_1
+      APP_PORT: 8080
+
+  auto-mcs:
+    image: macarooniman/auto-mcs:2.4@sha256:d9f44be5218bc1af6046c1106bbf032c992fbdaa3f2e9fb8024aba6694a81ef9
+    restart: on-failure
+    stdin_open: true
+    tty: true
+
+    environment:
+      WEB_PORT: "8080"
+      WEB_USERNAME: "admin"
+      WEB_PASSWORD: "auto-mcs"
+
+    ports:
+      - "7001:7001"
+      - "25565:25565"
+
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+    volumes:
+      - ${APP_DATA_DIR}/data:/root/.auto-mcs
