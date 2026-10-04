@@ -12,7 +12,6 @@ services:
     command: [
       "auto-mcs-ttyd",
       "-W",
-      "-O",
       "-t", "disableLeaveAlert=true",
       "-t", "titleFixed=auto-mcs",
       "-t", "fontSize=20",
