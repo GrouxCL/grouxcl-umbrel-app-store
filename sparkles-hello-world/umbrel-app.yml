@@ -5,7 +5,7 @@ tagline: Cross-platform Minecraft server manager
 icon: https://raw.githubusercontent.com/macaroonimus/auto-mcs/master/auto-mcs/assets/icon.png
 category: gaming
 version: "2.4.0"
-port: 4000
+port: 2626
 
 description: >-
   auto-mcs is a Minecraft server manager that lets you create,
