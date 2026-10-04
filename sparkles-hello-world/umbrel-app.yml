@@ -1,30 +1,29 @@
 manifestVersion: 1
-id: sparkles-hello-world
-name: Hello World
-tagline: Replace this tagline with your app's tagline
-icon: https://svgur.com/i/mvA.svg
-category: Development
-version: "1.0.0"
+id: auto-mcs
+name: auto-mcs
+tagline: Cross-platform Minecraft server manager
+icon: https://raw.githubusercontent.com/macaroonimus/auto-mcs/master/auto-mcs/assets/icon.png
+category: gaming
+version: "2.4.0"
 port: 4000
+
 description: >-
-  Add your app's description here.
+  auto-mcs is a Minecraft server manager that lets you create,
+  configure and manage Minecraft servers from a web interface.
 
+developer: Kaleb Efflandt
+submitter: GrouxCL
+website: https://auto-mcs.com
+repo: https://github.com/macaroonimus/auto-mcs
+support: https://github.com/macaroonimus/auto-mcs/issues
 
-  You can also add newlines!
+gallery: []
 
-developer: Umbrel
-website: https://umbrel.com
-submitter: Umbrel
-submission: https://github.com/getumbrel/umbrel-hello-world-app
-repo: https://github.com/getumbrel/umbrel-hello-world-app
-support: https://github.com/getumbrel/umbrel-hello-world-app/issues
-gallery:
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
 releaseNotes: >-
-  Add what's new in the latest version of your app here.
+  Initial Umbrel release.
+
 dependencies: []
 path: ""
-defaultUsername: ""
-defaultPassword: ""
+
+defaultUsername: "admin"
+defaultPassword: "auto-mcs"
