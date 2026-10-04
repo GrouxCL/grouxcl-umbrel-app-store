@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   auto-mcs:
-    image: macarooniman/auto-mcs:2.3.3@sha256:f33062e114fffda0e6ebdf4ad22e222844af4418334617a8fbc8faa0d7284974
+    image: macarooniman/auto-mcs:2.3.3@sha256:4641b870e60400197543c3e17f240dbb885d46a9b10fa3c5cbfcf57a73e62fe9
 
     command: [
       "auto-mcs-ttyd",
