@@ -3,8 +3,9 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: auto-mcs
+      APP_HOST: grouxcl-umbrel-auto-mcs_auto-mcs_1
       APP_PORT: 8080
+      PROXY_AUTH_ADD: "false"
 
   auto-mcs:
     image: macarooniman/auto-mcs:2.4@sha256:d9f44be5218bc1af6046c1106bbf032c992fbdaa3f2e9fb8024aba6694a81ef9
