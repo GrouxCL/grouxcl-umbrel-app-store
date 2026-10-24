@@ -2,7 +2,7 @@ manifestVersion: 1
 id: grouxcl-playit
 name: Playit
 tagline: Expose tes serveurs avec Playit.gg
-icon: https://playit.gg/
+icon: https://raw.githubusercontent.com/GrouxCL/grouxcl-umbrel-app-store/blob/master/icons/playit.png
 category: Gaming
 version: "1.0.10"
 port: 8008
