@@ -2,7 +2,7 @@ manifestVersion: 1
 id: grouxcl-playit
 name: Playit
 tagline: Expose tes serveurs avec Playit.gg
-icon: https://raw.githubusercontent.com/GrouxCL/grouxcl-umbrel-app-store/blob/master/medias/icons/playit.png
+icon: https://raw.githubusercontent.com/GrouxCL/grouxcl-umbrel-app-store/master/medias/icons/playit.png
 category: Gaming
 version: "1.0.10"
 port: 8008
@@ -11,11 +11,11 @@ description: >-
   Permet d'exposer des services sans configurer directement
   de redirection de ports sur le routeur.
 gallery:
-  - https://raw.githubusercontent.com/GrouxCL/grouxcl-umbrel-app-store/blob/master/medias/screenshots/playit-1.png
+  - https://raw.githubusercontent.com/GrouxCL/grouxcl-umbrel-app-store/master/medias/screenshots/playit-1.png
 developer: WisdomSky
 website: https://playit.gg/
 submitter: GrouxCL
-submission: https://github.com/WisdomSky/playit-docker-web
+submission: https://github.com/GrouxCL/grouxcl-umbrel-app-store
 repo: https://github.com/WisdomSky/playit-docker-web
 support: https://github.com/WisdomSky/playit-docker-web/issues
 releaseNotes: >-
