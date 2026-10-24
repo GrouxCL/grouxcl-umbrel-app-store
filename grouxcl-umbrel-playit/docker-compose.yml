@@ -1,10 +1,18 @@
-version: '3'
+version: "3.7"
 
 services:
+  app_proxy:
+    environment:
+      APP_HOST: host.docker.internal
+      APP_PORT: 8008
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
   playit:
-    image: ghcr.io/playit-cloud/playit-agent:1.0
-    container_name: app_playit_playit_1
-    restart: unless-stopped
+    image: wisdomsky/playit-docker-web:1.0.10
+    restart: on-failure
     network_mode: host
     environment:
-      - SECRET_KEY=9ec2e06aae2373dcfeafaab520bd7c217ca6a29cf4b613ce2dd9d43250920843
+      WEBUI_PORT: "8008"
+    volumes:
+      - ${APP_DATA_DIR}/config:/config
