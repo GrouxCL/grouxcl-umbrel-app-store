@@ -1,14 +1,24 @@
 manifestVersion: 1
 id: grouxcl-umbrel-playit
-name: Playit.gg Agent
-version: "1.0"
-category: utilities
+name: Playit
+tagline: Expose tes serveurs avec Playit.gg
+icon: https://playit.gg/
+category: Gaming
+version: "1.0.10"
+port: 8008
 description: >-
-  Playit.gg est un proxy de tunneling mondial qui vous permet d'héberger des serveurs
-  (comme Minecraft, Palworld ou SSH) depuis votre Umbrel sans ouvrir de ports sur votre box internet.
-  Cette application exécute l'agent officiel en arrière-plan avec votre clé secrète.
-developer: Playit Cloud
-website: https://playit.gg
+  Interface Web pour configurer et gérer un agent Playit.gg.
+  Permet d'exposer des services sans configurer directement
+  de redirection de ports sur le routeur.
+developer: WisdomSky
+website: https://playit.gg/
+submitter: GrouxCL
+submission: https://github.com/WisdomSky/playit-docker-web
+repo: https://github.com/WisdomSky/playit-docker-web
+support: https://github.com/WisdomSky/playit-docker-web/issues
+releaseNotes: >-
+  Première version de Playit pour le Community App Store.
 dependencies: []
-repo: https://github.com
-support: https://github.com/issues
+path: ""
+defaultUsername: ""
+defaultPassword: ""
