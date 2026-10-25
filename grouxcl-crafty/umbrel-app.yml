@@ -1,0 +1,34 @@
+manifestVersion: 1
+id: grouxcl-crafty
+name: Crafty Controller
+tagline: Gère tes serveurs Minecraft depuis une interface Web
+icon: https://raw.githubusercontent.com/GrouxCL/grouxcl-umbrel-app-store/master/medias/icons/crafty.png
+category: Gaming
+version: "4.11.0"
+port: 18443
+description: >-
+  Crafty Controller est une interface Web pour installer, configurer
+  et gérer des serveurs Minecraft. Elle permet de consulter les
+  consoles, les journaux, les sauvegardes et les paramètres des serveurs.
+
+  Au premier démarrage, consulte le fichier
+  data/config/default-creds.txt dans les données de l'application
+  pour récupérer les identifiants initiaux, puis change le mot de passe.
+gallery:
+  - https://raw.githubusercontent.com/GrouxCL/grouxcl-umbrel-app-store/master/medias/screenshots/crafty-1.png
+  - https://raw.githubusercontent.com/GrouxCL/grouxcl-umbrel-app-store/master/medias/screenshots/crafty-2.png
+  - https://raw.githubusercontent.com/GrouxCL/grouxcl-umbrel-app-store/master/medias/screenshots/crafty-3.png
+  - https://raw.githubusercontent.com/GrouxCL/grouxcl-umbrel-app-store/master/medias/screenshots/crafty-4.png
+developer: Arcadia Technology
+website: https://craftycontrol.com/
+submitter: GrouxCL
+submission: https://github.com/GrouxCL/grouxcl-umbrel-app-store
+repo: https://gitlab.com/crafty-controller
+support: https://gitlab.com/groups/crafty-controller/-/issues
+releaseNotes: >-
+  Première version communautaire de Crafty Controller avec proxy Nginx
+  pour la compatibilité UmbrelOS 2.0.
+dependencies: []
+path: ""
+defaultUsername: "admin"
+defaultPassword: ""
