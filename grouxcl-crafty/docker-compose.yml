@@ -1,0 +1,41 @@
+version: '3.7'
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: grouxcl-crafty_web_1
+      APP_PORT: 8080
+      PROXY_AUTH_ADD: "false"
+
+  web:
+    image: nginx:1.30.5-alpine@sha256:bf3201ab56f23e5954646379c775d511fc466e9f11376d9725361064ad07ed35
+    user: "1000:1000"
+    entrypoint: ["nginx"]
+    command: ["-g", "daemon off;"]
+    depends_on:
+      - crafty
+    volumes:
+      - ${APP_DATA_DIR}/hooks/nginx.conf:/etc/nginx/nginx.conf:ro
+    read_only: true
+    tmpfs:
+      - /tmp
+    restart: on-failure
+
+  crafty:
+    container_name: crafty_container
+    image: registry.gitlab.com/crafty-controller/crafty-4:4.11.0@sha256:7b6e87514259549647e15ceeaf73d238792e6d77e2c79fc744d5badc8d6e997c
+    environment:
+      TZ: Europe/Paris
+    ports:
+      - "18123:8123/tcp"                # Dynmap facultatif
+      - "19132:19132/tcp"               # Signalisation NetherNet
+      - "19132:19132/udp"               # Compatibilité Bedrock/RakNet
+      - "19140-19155:19140-19155/udp"   # Exemple de plage UDP NetherNet
+      - "25500-25600:25500-25600/tcp"   # Serveurs Minecraft Java
+    volumes:
+      - ${APP_DATA_DIR}/data/backups:/crafty/backups
+      - ${APP_DATA_DIR}/data/logs:/crafty/logs
+      - ${APP_DATA_DIR}/data/servers:/crafty/servers
+      - ${APP_DATA_DIR}/data/config:/crafty/app/config
+      - ${APP_DATA_DIR}/data/import:/crafty/import
+    restart: on-failure
